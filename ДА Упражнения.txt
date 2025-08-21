@@ -1,0 +1,175 @@
+Exercises Python intro
+
+first = "Hello world"
+#This is a comment
+print( "I AM A COMPUTER")
+
+if 1 < 2 and 4 > 2:
+    print("math is fun!")
+
+nope = ""
+
+print(11 > 3 and 12 < 30)
+
+print(len("What is my length?"))
+
+print("I am shouting".upper())
+
+print(int('1000'))
+
+print(str(4) + 'real')
+
+print(3 * "cool") #coolcoolcool
+
+print( 1 / 0) #Error div by 0
+
+list
+
+name = input("Enter your name: ")
+
+number = int(input("Enter a number: "))
+if number < 0:
+    print("That number is less than 0!")
+elif number > 0:
+    print ("That number is greater than 0!")
+else:
+    print("You picked 0!")  
+
+print('Apple'.index('l'))
+
+if 'xylophone'.index('y'):
+    print('Found')
+
+print('mystring'.lower())
+
+Cat and dog years
+
+h_age = int(input("Enter your age: "))
+if h_age <= 1:
+    print(f"Cat & dog years = 15")
+elif h_age == 2:
+    print(f"Cat & dog years = {15+9}")
+elif h_age>2:
+    print(f"Cat years = {15+9+((h_age-2)*4)}")
+    print(f"Dog years = {15+9+((h_age-2)*5)}")
+
+==================Class 20.08.25
+description = "strings are ..."
+print(description.upper())
+print(description.replace('are','is'))
+print(description[:7])
+#NUMBERS
+age = 35
+age += 1
+print(age)
+print(10 % 3) #module
+my_age = 35
+print(my_age + 123879)
+first_name = 'Boris'
+last_name = 'Khusid'
+print(f'{first_name} {last_name}')
+
+user_name = input('Enter your name')
+name_len = len(user_name)
+if name_len < 5:
+    print('You have a short name')
+
+my_number = int(input('What is your number?'))
+if (my_number % 3) > 0:
+    print('Yout number can\'t be devided by 3')
+==================ДЗ 20.08.25
+
+#1
+print('Hello World')
+#2
+print((99 ^ 3) * 8)
+#3
+False
+True
+False
+Error
+False
+#4
+computer_brand = 'ASUS'
+print(f'I have a {computer_brand} computer')
+#5
+name = 'Boris'
+age = 35
+shoe_size = 45
+info = f'My name is {name}, my age is {age}, my shoe size is {shoe_size}.'
+print(info)
+#6
+a = 7
+b = 5
+if a > b:
+    print('Hello World')
+#7
+number = int(input('Enter a number'))
+if (number % 2) > 0:
+    print('It\'s odd number')
+else:
+    print('It\'s even number')
+#8
+name = input('Enter your name')
+if name == 'Boris':
+    print('We have the same name!')
+#9
+height = float(input('Enter your height'))
+if height > 145:
+    print('You are tall enough to ride')
+else:
+    print('You have to grow up to ride')
+===========================XP Gold
+#2
+month = int(input('Please, enter a month'))
+if month < 1 or month >12:
+    print('Enter a correct month!')
+else:
+    if month >=3 and month <=5:
+        print('It is a spring')    
+    elif month >=6 and month <=8:
+        print('It is a summer')  
+    elif month >=9 and month <=11:
+        print('It is an autumn')    
+    elif month ==12 or month <=2:
+        print('It is a winter')      
+==============================Daily Challenge
+phrase = input('Enter a phrase exactly 10 characters long')
+if len(phrase) > 10:
+    print('Phrase is too long')
+elif len(phrase) < 10:
+    print("Phrase is too short")
+else:
+    print('Perfect string')
+    
+==============================21.08.25
+
+my_text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+           laboris nisi ut aliquip ex ea commodo consequat. 
+           Duis aute irure dolor in reprehenderit in voluptate velit 
+           esse cillum dolore eu fugiat nulla pariatur. 
+           Excepteur sint occaecat cupidatat non proident, 
+           sunt in culpa qui officia deserunt mollit anim id est laborum."""
+print(len(my_text))
+
+list1 = [5, 10, 15, 20, 25, 50, 20]
+list1[list1.index(20)] = 200
+print(list1)
+
+
+my_colors = {'blue', 'green', 'red'}
+my_colors.add('purple')
+print(my_colors)
+friends_colors = {'yellow', 'red', 'white'}
+print(my_colors.intersection(friends_colors))
+print(my_colors.difference(friends_colors))
+my_colors.clear
+
+#for char in 'student':
+#    print(char)
+
+fruits = ['apple', 'watermelon', 'banana']
+for fruit in fruits:
+    print(f'I love {fruit}')
