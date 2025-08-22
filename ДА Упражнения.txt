@@ -240,36 +240,6 @@ user_name = ""
 while user_name == "":
     user_name = input("Please, enter your name.")
 print(f'Your name is {user_name}')
-
-#7
-fav_fruits = input("Enter favorite fruits (you can input several fruits, separated by spaces).")
-index = fav_fruits.find(" ")
-ff_list = []
-if index == -1: ff_list.append(fav_fruits)
-while index != -1:
-#Take first fruit + space
-    ff_list.append(fav_fruits[:index])
-    fav_fruits = fav_fruits[index:]
-    print(ff_list)
-    index = fav_fruits.find(" ")
-
-
-fav_fruits = input("Enter favorite fruits (you can input several fruits, separated by spaces).")
-index = fav_fruits.find(" ")
-ff_list = []
-if index == -1: ff_list.append(fav_fruits)
-print(index)
-while index < 1:
-#Take first fruit + space
-    ff_list.append(fav_fruits[:index])
-    fav_fruits = fav_fruits[index:]
-    print(ff_list)
-    index = fav_fruits.find(" ")
-    print(index)
-    break
-print(ff_list)
-
-=================================
 #7
 fav_fruits = input("Enter favorite fruits (you can input several fruits, separated by spaces).")
 lst_fruits = fav_fruits.split()
@@ -348,3 +318,23 @@ while sandwich_orders:
 # Final result
 print("\nAll finished sandwiches:")
 print(finished_sandwiches)
+
+=============================
+
+#1
+phrase = input('Enter a phrase exactly 10 characters long')
+#2
+if len(phrase) > 10:
+    print('Phrase is too long')
+elif len(phrase) < 10:
+    print("Phrase is too short")
+else:
+    print('Perfect string')
+#3
+print(phrase[0])
+print(phrase[-1])
+#4
+result = ''
+for char in phrase:
+    result = result + char
+    print(result)

@@ -1,17 +1,19 @@
-#1
-phrase = input('Enter a phrase exactly 10 characters long')
-#2
-if len(phrase) > 10:
-    print('Phrase is too long')
-elif len(phrase) < 10:
-    print("Phrase is too short")
+#1 Ask for user input
+user_string = input("Enter a string (must be exactly 10 characters long): ")
+
+#2 Check string length
+if len(user_string) < 10:
+    print("String not long enough.")
+elif len(user_string) > 10:
+    print("String too long.")
 else:
-    print('Perfect string')
-#3
-print(phrase[0])
-print(phrase[-1])
-#4
-result = ''
-for char in phrase:
-    result = result + char
-    print(result)
+    print("Perfect string!")
+
+#3 Print first and last characters
+    print("First character:", user_string[0])
+    print("Last character:", user_string[-1])
+
+#4 Build the string character by character
+    print("\nBuilding the string step by step:")
+    for i in range(1, len(user_string) + 1):
+        print(user_string[:i])
