@@ -1,21 +1,22 @@
-#ask user for a word and store it in a variable
+# ask user for a word and store it in a variable
 word = input("Enter a word: ")
 # create a dictionary to store characters and their indices
 char_indices = {}
 #iterate through the word and populate the dictionary with characters as keys 
 # and their indices as values
+#use 'for' loop to iterate through each character in the word
 for index, char in enumerate(word):
     #check if the character is already a key in the dictionary
     if char in char_indices:
-        #append the index to the list of indices for that character
+        #modify the entry - append the index to the list of indices for that character
         char_indices[char].append(index)
     else:
-        #create a new entry in the dictionary with the character as the key
+        #create a NEW ENTRY in the dictionary with the character as the key
         # and a list containing the current index as the value
         char_indices[char] = [index]
 
 print(char_indices)
-
+#-------------------------------------------------
 #2
 items_purchase = {"Water": "$1", "Bread": "$3", "TV": "$1,000", "Fertilizer": "$20"}
 wallet = "$300"
@@ -27,6 +28,8 @@ wallet = "$300"
 # wallet = "$1"
 
 # Clean wallet amount
+#since string is immutable, we need to create a new string by replacing $ and , with nothing
+#and then convert to integer
 wallet_amount = int(wallet.replace("$", "").replace(",", ""))
 #replace $ and , with nothing and convert to integer
 
@@ -40,6 +43,7 @@ for item, price in items_purchase.items():
         affordable.append(item)
 
 # Sort and output
+print('')
 if not affordable:
     print("Nothing")
 else:
